@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  database:
+    image: "postgres"
+    container_name: database
+    ports:
+      - "5432:5432"
+    volumes:
+      - "db_data_fastify_book:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=fastify-book-dev-db
+  backend:
+    container_name: fastify-gram-backend
+    build:
+      target: dev
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - D:\web-projects\fastify\fastify-book\backend:/app
+    environment:
+      - DATABASE_URL=postgresql://postgres:root@database:5432/fastify-book-dev-db?schema=public
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+volumes:
+  db_data_fastify_book:

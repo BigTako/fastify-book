@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum ENTITY {
+  POST
+  COMMENT
+}
+
+enum LIKE_TYPE {
+  LIKE
+  DISLIKE
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  email String @unique
+  name String @db.VarChar(255)
+  role Role @default(USER)
+  password String
+  passwordConfirm String
+  active Boolean @default(false)
+  activated Boolean @default(false)
+  accountActivationToken String?
+  accountActivationTokenExpiresAt DateTime?
+  passwordResetToken String?
+  passwordResetTokenExpires DateTime?
+  createdAt DateTime @default(now())
+  posts Post[]
+  comments Comment[]
+  likes Like[]
+}
+
+model Post {
+  id Int @id @default(autoincrement())
+  title String
+  content String
+  author User @relation(fields: [authorId], references: [id])
+  authorId Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Comment {
+  id Int @id @default(autoincrement())
+  content String
+  author User @relation(fields: [authorId], references: [id])
+  authorId Int
+  entity ENTITY
+  entityId Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Like {
+  id Int @id @default(autoincrement())
+  author User @relation(fields: [authorId], references: [id])
+  authorId Int
+  entity ENTITY
+  entityId Int
+  type LIKE_TYPE
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
