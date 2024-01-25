@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  database-test:
+    image: "postgres"
+    container_name: database-test
+    ports:
+      - "5433:5433"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=fastify-book-test-db
+      - PGPORT=5433
+  backend-test:
+    container_name: fastify-book-backend-test
+    build:
+      target: dev
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - D:\web-projects\fastify\fastify-book\backend:/app
+    environment:
+      - DATABASE_URL=postgresql://postgres:root@database-test:5433/fastify-book-test-db?schema=public
+      - APP_NAME=fastify-gram-backend-test
+    ports:
+      - "4000:4000"
+    depends_on:
+      - database-test
+    # command: ["npx", "prisma", "migrate", "dev", "--name", "init"]

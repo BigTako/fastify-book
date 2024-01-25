@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { Role, userCore } from "./user.core";
+import { Role } from "./user.core";
 
 export const passwordSchema = z
   .object({
@@ -29,4 +29,32 @@ export const createUserSchema = z
   })
   .and(passwordSchema);
 
+export const updateUserSchema = z.object({
+  name: z.string().optional(),
+  email: z.string().email().optional(),
+  role: z.nativeEnum(Role).optional(),
+  active: z.boolean().optional(),
+  activated: z.boolean().optional(),
+});
+
+export const signupSchema = z
+  .object({
+    name: z.string(),
+    email: z.string().email(),
+  })
+  .and(passwordSchema);
+
+export const loginSchema = z.object({
+  email: z.string().email(),
+  password: z.string(),
+});
+
+export const forgotPasswordSchema = z.object({
+  email: z.string().email(),
+});
+
+export type PasswordInput = z.infer<typeof passwordSchema>;
+export type LoginInput = z.infer<typeof loginSchema>;
+export type SignupInput = z.infer<typeof signupSchema>;
+export type UpdateUserInput = z.infer<typeof updateUserSchema>;
 export type CreateUserInput = z.infer<typeof createUserSchema>;

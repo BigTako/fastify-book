@@ -12,7 +12,7 @@ services:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=fastify-book-dev-db
   backend:
-    container_name: fastify-gram-backend
+    container_name: fastify-book-backend
     build:
       target: dev
       context: ./backend
@@ -21,9 +21,11 @@ services:
       - D:\web-projects\fastify\fastify-book\backend:/app
     environment:
       - DATABASE_URL=postgresql://postgres:root@database:5432/fastify-book-dev-db?schema=public
+      - APP_NAME=fastify-gram-backend
     ports:
       - "3000:3000"
     depends_on:
       - database
+    # command: ["npx", "prisma", "migrate", "dev", "--name", "init"]
 volumes:
   db_data_fastify_book:

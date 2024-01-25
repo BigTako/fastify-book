@@ -1,5 +1,5 @@
 import prisma from "../../utils/prisma";
-import { CreateUserInput } from "./user.schema";
+import { CreateUserInput, UpdateUserInput } from "./schemas/user.req.shemas";
 
 export async function findAll() {
   const users = await prisma.user.findMany();
@@ -26,20 +26,20 @@ export async function createOne(input: CreateUserInput) {
   return user;
 }
 
-// export async function updateOne(id: number, input: UpdateUserInput) {
-//   const user = await prisma.user.update({
-//     where: {
-//       id,
-//     },
-//     data: input,
-//   });
+export async function updateOne(id: number, input: UpdateUserInput) {
+  const user = await prisma.user.update({
+    where: {
+      id,
+    },
+    data: input,
+  });
 
-//   if (!user) {
-//     throw new Error("Document not found");
-//   }
+  if (!user) {
+    throw new Error("Document not found");
+  }
 
-//   return user;
-// }
+  return user;
+}
 
 export async function deleteOne(id: number) {
   const user = await prisma.user.delete({
@@ -52,5 +52,5 @@ export async function deleteOne(id: number) {
     throw new Error("Document not found");
   }
 
-  return user;
+  return null;
 }

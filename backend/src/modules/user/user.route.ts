@@ -1,7 +1,13 @@
 import { FastifyInstance } from "fastify";
-import { createUser, getAllUsers } from "./user.contoller";
+import {
+  createUser,
+  deleteUser,
+  getAllUsers,
+  getUser,
+  updateUser,
+} from "./user.contoller";
 import { $ref, userResponceSchema } from "./schemas/user.res.schemas";
-import { createUserSchema } from "./schemas/user.req.shemas";
+import { createUserSchema, updateUserSchema } from "./schemas/user.req.shemas";
 
 export async function userRoutes(server: FastifyInstance) {
   server.get(
@@ -17,6 +23,18 @@ export async function userRoutes(server: FastifyInstance) {
     getAllUsers
   );
 
+  server.get(
+    "/:id",
+    {
+      schema: {
+        response: {
+          200: $ref("userResponceSchema"),
+        },
+      },
+    },
+    getUser
+  );
+
   server.post(
     "/",
     {
@@ -29,4 +47,19 @@ export async function userRoutes(server: FastifyInstance) {
     },
     createUser
   );
+
+  server.patch(
+    "/:id",
+    {
+      schema: {
+        body: updateUserSchema,
+        response: {
+          201: $ref("userResponceSchema"),
+        },
+      },
+    },
+    updateUser
+  );
+
+  server.delete("/:id", {}, deleteUser);
 }

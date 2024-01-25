@@ -1,0 +1,102 @@
+TAP version 14
+# Subtest: setup
+    1..0
+ok 1 - setup # time=11.982ms
+
+# Subtest: Heatch check test
+    1..3
+    ok 1 - should not error
+    ok 2 - should be equal
+    ok 3 - should be equivalent
+ok 2 - Heatch check test # time=324.66ms
+
+# Subtest: User interraction test
+    1..3
+    ok 1 - should not error
+    not ok 2 - User created successfully
+      ---
+      compare: ===
+      at:
+        fileName: test/admin-workflow.test.ts
+        lineNumber: 51
+        columnNumber: 9
+        isToplevel: true
+      stack: |
+        test/admin-workflow.test.ts:51:9
+        node_modules/light-my-request/lib/response.js:27:28
+      source: "    (err, response) => {\r
+      
+        \      t.error(err);\r
+      
+        \      t.equal(response.statusCode, 201, \"User created successfully\");\r
+      
+        --------^
+      
+        \r
+      
+        \      t.match(\n"
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -201
+        +500
+      ...
+    
+    not ok 3 - User responce schema is correct
+      ---
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,8 +1,2 @@
+         Object {
+        -  "id": Function Number(),
+        -  "name": Function String(),
+        -  "email": Function String(),
+        -  "role": Function String(),
+        -  "active": Function Boolean(),
+        -  "activated": Function Boolean(),
+         }
+      at:
+        fileName: test/admin-workflow.test.ts
+        lineNumber: 53
+        columnNumber: 9
+        isToplevel: true
+      stack: |
+        test/admin-workflow.test.ts:53:9
+        node_modules/light-my-request/lib/response.js:27:28
+      source: "      t.equal(response.statusCode, 201, \"User created
+        successfully\");\r
+      
+        \r
+      
+        \      t.match(\r
+      
+        --------^
+      
+        \        response.json(),\r
+      
+        \        {\n"
+      ...
+    
+not ok 3 - User interraction test # time=161.685ms
+  ---
+  at:
+    fileName: test/admin-workflow.test.ts
+    lineNumber: 33
+    columnNumber: 1
+    typeName: Object
+  source: "});\r
+  
+    \r
+  
+    test(\"User interraction test\", async (t: Test) => {\r
+  
+    ^
+  
+    \  t.plan(3);\r
+  
+    \  const app = build();\n"
+  ...
+
+1..3

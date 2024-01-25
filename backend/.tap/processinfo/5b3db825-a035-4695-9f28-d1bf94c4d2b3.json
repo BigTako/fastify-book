@@ -1,0 +1,280 @@
+{
+  "date": "2024-01-25T06:45:55.346Z",
+  "argv": [
+    "/usr/local/bin/node",
+    "/app/test/admin-workflow.test.ts"
+  ],
+  "execArgv": [
+    "--import=file:///app/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "--import=file:///app/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///app/node_modules/@tapjs/processinfo/dist/esm/import.mjs"
+  ],
+  "NODE_OPTIONS": "\"--import=file:///app/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
+  "cwd": "/app",
+  "pid": 179,
+  "ppid": 95,
+  "parent": null,
+  "uuid": "5b3db825-a035-4695-9f28-d1bf94c4d2b3",
+  "files": [
+    "/app/test/admin-workflow.test.ts",
+    "/app/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "/app/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import-loader.mjs",
+    "/app/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "/app/node_modules/@tapjs/mock/dist/esm/mock-service.js",
+    "/app/node_modules/@tapjs/stack/dist/esm/index.js",
+    "/app/node_modules/resolve-import/dist/esm/index.js",
+    "/app/node_modules/resolve-import/dist/esm/is-relative-require.js",
+    "/app/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js",
+    "/app/node_modules/@tapjs/mock/dist/esm/service-key.js",
+    "/app/node_modules/@tapjs/mock/dist/esm/export-line.js",
+    "/app/node_modules/@tapjs/mock/dist/esm/munge-mocks.js",
+    "/app/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
+    "/app/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
+    "/app/node_modules/resolve-import/dist/esm/get-all-conditional-values.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js",
+    "/app/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-conditional-value.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-import.js",
+    "/app/node_modules/resolve-import/dist/esm/get-all-conditions.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-all-exports.js",
+    "/app/node_modules/resolve-import/dist/esm/is-windows.js",
+    "/app/node_modules/@tapjs/stack/dist/esm/parse.js",
+    "/app/node_modules/resolve-import/dist/esm/get-conditional-values-list.js",
+    "/app/node_modules/resolve-import/dist/esm/get-named-exports-list.js",
+    "/app/node_modules/resolve-import/dist/esm/read-pkg.js",
+    "/app/node_modules/resolve-import/dist/esm/errors.js",
+    "/app/node_modules/resolve-import/dist/esm/find-dep-package.js",
+    "/app/node_modules/resolve-import/dist/esm/to-path.js",
+    "/app/node_modules/resolve-import/dist/esm/to-file-url.js",
+    "/app/node_modules/resolve-import/dist/esm/file-exists.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-dependency-export.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-package-import.js",
+    "/app/node_modules/resolve-import/dist/esm/star-glob.js",
+    "/app/node_modules/resolve-import/dist/esm/resolve-export.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/index.js",
+    "/app/node_modules/walk-up-path/dist/mjs/index.js",
+    "/app/node_modules/resolve-import/dist/esm/find-star-match.js",
+    "/app/node_modules/resolve-import/dist/esm/read-json.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/index.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/assert-valid-pattern.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/ast.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/escape.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/unescape.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js",
+    "/app/node_modules/path-scurry/dist/mjs/index.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js",
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/brace-expressions.js",
+    "/app/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js",
+    "/app/node_modules/minipass/dist/esm/index.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js",
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js",
+    "/app/node_modules/@tapjs/mock/dist/esm/loader.mjs",
+    "/app/node_modules/@tapjs/mock/dist/esm/hooks.mjs",
+    "/app/node_modules/@tapjs/mock/dist/esm/mock-service-client.js",
+    "/app/src/app.ts",
+    "/app/src/modules/user/schemas/user.res.schemas.ts",
+    "/app/src/modules/user/schemas/user.core.ts",
+    "/app/src/modules/user/user.route.ts",
+    "/app/src/modules/user/user.contoller.ts",
+    "/app/src/modules/user/user.service.ts",
+    "/app/src/utils/prisma.ts",
+    "/app/src/modules/user/schemas/user.req.shemas.ts"
+  ],
+  "sources": {
+    "/app/node_modules/@tapjs/mock/dist/esm/import.mjs": [
+      "/app/node_modules/@tapjs/mock/src/import.mts"
+    ],
+    "/app/node_modules/@tapjs/mock/dist/esm/mock-service.js": [
+      "/app/node_modules/@tapjs/mock/src/mock-service.ts"
+    ],
+    "/app/node_modules/@tapjs/stack/dist/esm/index.js": [
+      "/app/node_modules/@tapjs/stack/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/index.js": [
+      "/app/node_modules/resolve-import/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/is-relative-require.js": [
+      "/app/node_modules/resolve-import/src/is-relative-require.ts"
+    ],
+    "/app/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js": [
+      "/app/node_modules/@tapjs/mock/src/resolve-mock-entry-point.ts"
+    ],
+    "/app/node_modules/@tapjs/mock/dist/esm/service-key.js": [
+      "/app/node_modules/@tapjs/mock/src/service-key.ts"
+    ],
+    "/app/node_modules/@tapjs/mock/dist/esm/export-line.js": [
+      "/app/node_modules/@tapjs/mock/src/export-line.ts"
+    ],
+    "/app/node_modules/@tapjs/mock/dist/esm/munge-mocks.js": [
+      "/app/node_modules/@tapjs/mock/src/munge-mocks.ts"
+    ],
+    "/app/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
+      "/app/node_modules/@tapjs/stack/src/call-site-like.ts"
+    ],
+    "/app/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
+      "/app/node_modules/@tapjs/stack/src/require-resolve.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/get-all-conditional-values.js": [
+      "/app/node_modules/resolve-import/src/get-all-conditional-values.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js": [
+      "/app/node_modules/resolve-import/src/resolve-all-local-imports.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js": [
+      "/app/node_modules/resolve-import/src/get-unique-condition-sets.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-conditional-value.js": [
+      "/app/node_modules/resolve-import/src/resolve-conditional-value.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-import.js": [
+      "/app/node_modules/resolve-import/src/resolve-import.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/get-all-conditions.js": [
+      "/app/node_modules/resolve-import/src/get-all-conditions.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-all-exports.js": [
+      "/app/node_modules/resolve-import/src/resolve-all-exports.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/is-windows.js": [
+      "/app/node_modules/resolve-import/src/is-windows.ts"
+    ],
+    "/app/node_modules/@tapjs/stack/dist/esm/parse.js": [
+      "/app/node_modules/@tapjs/stack/src/parse.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/get-conditional-values-list.js": [
+      "/app/node_modules/resolve-import/src/get-conditional-values-list.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/get-named-exports-list.js": [
+      "/app/node_modules/resolve-import/src/get-named-exports-list.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/read-pkg.js": [
+      "/app/node_modules/resolve-import/src/read-pkg.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/errors.js": [
+      "/app/node_modules/resolve-import/src/errors.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/find-dep-package.js": [
+      "/app/node_modules/resolve-import/src/find-dep-package.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/to-path.js": [
+      "/app/node_modules/resolve-import/src/to-path.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/to-file-url.js": [
+      "/app/node_modules/resolve-import/src/to-file-url.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/file-exists.js": [
+      "/app/node_modules/resolve-import/src/file-exists.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-dependency-export.js": [
+      "/app/node_modules/resolve-import/src/resolve-dependency-export.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-package-import.js": [
+      "/app/node_modules/resolve-import/src/resolve-package-import.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/star-glob.js": [
+      "/app/node_modules/resolve-import/src/star-glob.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/resolve-export.js": [
+      "/app/node_modules/resolve-import/src/resolve-export.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/index.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/index.ts"
+    ],
+    "/app/node_modules/walk-up-path/dist/mjs/index.js": [
+      "/app/node_modules/walk-up-path/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/find-star-match.js": [
+      "/app/node_modules/resolve-import/src/find-star-match.ts"
+    ],
+    "/app/node_modules/resolve-import/dist/esm/read-json.js": [
+      "/app/node_modules/resolve-import/src/read-json.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/index.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/glob.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/has-magic.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/assert-valid-pattern.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/assert-valid-pattern.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/ast.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/ast.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/escape.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/escape.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/unescape.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/unescape.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/walker.ts"
+    ],
+    "/app/node_modules/path-scurry/dist/mjs/index.js": [
+      "/app/node_modules/path-scurry/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/pattern.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/minimatch/dist/mjs/brace-expressions.js": [
+      "/app/node_modules/resolve-import/node_modules/minimatch/src/brace-expressions.ts"
+    ],
+    "/app/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js": [
+      "/app/node_modules/path-scurry/node_modules/lru-cache/src/index.ts"
+    ],
+    "/app/node_modules/minipass/dist/esm/index.js": [
+      "/app/node_modules/minipass/src/index.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/ignore.ts"
+    ],
+    "/app/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js": [
+      "/app/node_modules/resolve-import/node_modules/glob/src/processor.ts"
+    ]
+  },
+  "root": "5b3db825-a035-4695-9f28-d1bf94c4d2b3",
+  "externalID": "test/admin-workflow.test.ts",
+  "code": 1,
+  "signal": null,
+  "runtime": 17935.4787,
+  "globalsAdded": [
+    "__extends",
+    "__assign",
+    "__rest",
+    "__decorate",
+    "__param",
+    "__esDecorate",
+    "__runInitializers",
+    "__propKey",
+    "__setFunctionName",
+    "__metadata",
+    "__awaiter",
+    "__generator",
+    "__exportStar",
+    "__createBinding",
+    "__values",
+    "__read",
+    "__spread",
+    "__spreadArrays",
+    "__spreadArray",
+    "__await",
+    "__asyncGenerator",
+    "__asyncDelegator",
+    "__asyncValues",
+    "__makeTemplateObject",
+    "__importStar",
+    "__importDefault",
+    "__classPrivateFieldGet",
+    "__classPrivateFieldSet",
+    "__classPrivateFieldIn",
+    "__addDisposableResource",
+    "__disposeResources",
+    "NODE_CLIENT"
+  ]
+}

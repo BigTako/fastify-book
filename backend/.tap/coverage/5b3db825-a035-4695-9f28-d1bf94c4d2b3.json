@@ -1,0 +1,812 @@
+{
+  "result": [
+    {
+      "scriptId": "666",
+      "url": "file:///app/src/app.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 4770,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "__importDefault",
+          "ranges": [
+            {
+              "startOffset": 70,
+              "endOffset": 151,
+              "count": 1
+            },
+            {
+              "startOffset": 122,
+              "endOffset": 127,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "build",
+          "ranges": [
+            {
+              "startOffset": 439,
+              "endOffset": 1413,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 546,
+              "endOffset": 614,
+              "count": 6
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 579,
+              "endOffset": 607,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 645,
+              "endOffset": 1107,
+              "count": 1
+            },
+            {
+              "startOffset": 721,
+              "endOffset": 1045,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 873,
+              "endOffset": 1017,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 1161,
+              "endOffset": 1198,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 1247,
+              "endOffset": 1313,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "950",
+      "url": "file:///app/src/modules/user/schemas/user.res.schemas.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2176,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1053",
+      "url": "file:///app/src/modules/user/schemas/user.core.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2117,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 160,
+              "endOffset": 235,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1054",
+      "url": "file:///app/src/modules/user/user.route.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 4421,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "userRoutes",
+          "ranges": [
+            {
+              "startOffset": 290,
+              "endOffset": 1303,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1055",
+      "url": "file:///app/src/modules/user/user.contoller.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 5155,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getAllUsers",
+          "ranges": [
+            {
+              "startOffset": 238,
+              "endOffset": 371,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "getUser",
+          "ranges": [
+            {
+              "startOffset": 407,
+              "endOffset": 575,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "createUser",
+          "ranges": [
+            {
+              "startOffset": 603,
+              "endOffset": 766,
+              "count": 1
+            },
+            {
+              "startOffset": 704,
+              "endOffset": 765,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "updateUser",
+          "ranges": [
+            {
+              "startOffset": 800,
+              "endOffset": 983,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "deleteUser",
+          "ranges": [
+            {
+              "startOffset": 1017,
+              "endOffset": 1177,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1056",
+      "url": "file:///app/src/modules/user/user.service.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 4833,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "__importDefault",
+          "ranges": [
+            {
+              "startOffset": 70,
+              "endOffset": 151,
+              "count": 1
+            },
+            {
+              "startOffset": 128,
+              "endOffset": 148,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "findAll",
+          "ranges": [
+            {
+              "startOffset": 385,
+              "endOffset": 489,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "findOne",
+          "ranges": [
+            {
+              "startOffset": 517,
+              "endOffset": 744,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "createOne",
+          "ranges": [
+            {
+              "startOffset": 772,
+              "endOffset": 907,
+              "count": 1
+            },
+            {
+              "startOffset": 888,
+              "endOffset": 906,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "updateOne",
+          "ranges": [
+            {
+              "startOffset": 939,
+              "endOffset": 1192,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "deleteOne",
+          "ranges": [
+            {
+              "startOffset": 1224,
+              "endOffset": 1449,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1057",
+      "url": "file:///app/src/utils/prisma.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 703,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1061",
+      "url": "file:///app/src/modules/user/schemas/user.req.shemas.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 6465,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "exports.passwordSchema.zod_1.z.object.refine.message",
+          "ranges": [
+            {
+              "startOffset": 559,
+              "endOffset": 607,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 3850.128866,
+  "source-map-cache": {
+    "file:///app/src/app.ts": {
+      "lineLengths": [
+        13,
+        72,
+        62,
+        2,
+        62,
+        54,
+        78,
+        29,
+        58,
+        27,
+        45,
+        50,
+        44,
+        7,
+        56,
+        48,
+        36,
+        32,
+        37,
+        53,
+        35,
+        41,
+        35,
+        20,
+        15,
+        9,
+        14,
+        30,
+        9,
+        7,
+        90,
+        13,
+        59,
+        32,
+        7,
+        75,
+        19,
+        1,
+        23,
+        3332
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/app.ts",
+        "sources": [
+          "file:///app/src/app.ts"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA,sDAA8B;AAE9B,8EAA8E;AAC9E,6BAAwB;AACxB,0DAAuD;AAEvD,SAAS,KAAK,CAAC,IAAI,GAAG,EAAE;IACtB,MAAM,OAAO,GAAG,IAAA,iBAAO,GAAE,CAAC;IAE1B,OAAO,CAAC,oBAAoB,CAAC,CAAC,EAAE,MAAM,EAAmB,EAAE,EAAE;QAC3D,OAAO,CAAC,IAAI,EAAE,EAAE,CAAC,MAAM,CAAC,KAAK,CAAC,IAAI,CAAC,CAAC;IACtC,CAAC,CAAC,CAAC;IAEH,OAAO,CAAC,eAAe,CAAC,CAAC,KAAK,EAAE,OAAO,EAAE,KAAK,EAAE,EAAE;QAChD,IAAI,KAAK,YAAY,OAAC,CAAC,QAAQ,EAAE,CAAC;YAChC,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC;gBACrB,UAAU,EAAE,GAAG;gBACf,KAAK,EAAE,aAAa;gBACpB,OAAO,EAAE,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,GAAG,EAAE,EAAE,CAAC,CAAC;oBAClC,IAAI,EAAE,GAAG,CAAC,IAAI;oBACd,OAAO,EAAE,GAAG,CAAC,OAAO;oBACpB,IAAI,EAAE,GAAG,CAAC,IAAI;iBACf,CAAC,CAAC;aACJ,CAAC,CAAC;QACL,CAAC;aAAM,CAAC;YACN,KAAK,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;QACpB,CAAC;IACH,CAAC,CAAC,CAAC;IAEH,sCAAmB,CAAC,OAAO,CAAC,CAAC,MAAM,EAAE,EAAE,CAAC,OAAO,CAAC,SAAS,CAAC,MAAM,CAAC,CAAC,CAAC;IAEnE,SAAS;IAET,OAAO,CAAC,GAAG,CAAC,cAAc,EAAE,KAAK,EAAE,OAAO,EAAE,KAAK,EAAE,EAAE;QACnD,OAAO,EAAE,MAAM,EAAE,IAAI,EAAE,CAAC;IAC1B,CAAC,CAAC,CAAC;IAEH,OAAO,CAAC,QAAQ,CAAC,uBAAU,EAAE,EAAE,MAAM,EAAE,eAAe,EAAE,CAAC,CAAC;IAE1D,OAAO,OAAO,CAAC;AACjB,CAAC;AAED,MAAM,CAAC,OAAO,GAAG,KAAK,CAAC",
+        "sourcesContent": [
+          "import Fastify from \"fastify\";\r\n\r\nimport { userResponceSchemas } from \"./modules/user/schemas/user.res.schemas\";\r\nimport { z } from \"zod\";\r\nimport { userRoutes } from \"./modules/user/user.route\";\r\n\r\nfunction build(opts = {}) {\r\n  const fastify = Fastify();\r\n\r\n  fastify.setValidatorCompiler(({ schema }: { schema: any }) => {\r\n    return (data) => schema.parse(data);\r\n  });\r\n\r\n  fastify.setErrorHandler((error, request, reply) => {\r\n    if (error instanceof z.ZodError) {\r\n      reply.status(400).send({\r\n        statusCode: 400,\r\n        error: \"Bad Request\",\r\n        message: error.errors.map((err) => ({\r\n          code: err.code,\r\n          message: err.message,\r\n          path: err.path,\r\n        })),\r\n      });\r\n    } else {\r\n      reply.send(error);\r\n    }\r\n  });\r\n\r\n  userResponceSchemas.forEach((schema) => fastify.addSchema(schema));\r\n\r\n  // routes\r\n\r\n  fastify.get(\"/healthcheck\", async (request, reply) => {\r\n    return { status: \"ok\" };\r\n  });\r\n\r\n  fastify.register(userRoutes, { prefix: \"/api/v1/users\" });\r\n\r\n  return fastify;\r\n}\r\n\r\nmodule.exports = build;\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/schemas/user.res.schemas.ts": {
+      "lineLengths": [
+        13,
+        7,
+        62,
+        111,
+        45,
+        29,
+        43,
+        107,
+        72,
+        42,
+        51,
+        53,
+        100,
+        1428
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/schemas/user.res.schemas.ts",
+        "sources": [
+          "file:///app/src/modules/user/schemas/user.res.schemas.ts"
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,6CAA+C;AAC/C,6BAAwB;AACxB,2CAAuC;AAE1B,QAAA,kBAAkB,GAAG,OAAC,CAAC,MAAM,iBACxC,EAAE,EAAE,OAAC,CAAC,MAAM,EAAE,IACX,oBAAQ,EACX,CAAC;AAEU,QAAA,mBAAmB,GAAG,OAAC,CAAC,KAAK,CAAC,0BAAkB,CAAC,CAAC;AAElD,KAAyC,IAAA,8BAAgB,EACpE;IACE,kBAAkB,EAAlB,0BAAkB;IAClB,mBAAmB,EAAnB,2BAAmB;CACpB,EACD,EAAE,GAAG,EAAE,oBAAoB,EAAE,CAC9B,EANuB,2BAAmB,eAAE,YAAI,WAM/C",
+        "sourcesContent": [
+          "import { buildJsonSchemas } from \"fastify-zod\";\r\nimport { z } from \"zod\";\r\nimport { userCore } from \"./user.core\";\r\n\r\nexport const userResponceSchema = z.object({\r\n  id: z.number(),\r\n  ...userCore,\r\n});\r\n\r\nexport const usersResponceSchema = z.array(userResponceSchema);\r\n\r\nexport const { schemas: userResponceSchemas, $ref } = buildJsonSchemas(\r\n  {\r\n    userResponceSchema,\r\n    usersResponceSchema,\r\n  },\r\n  { $id: \"UserResponceSchema\" }\r\n);\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/schemas/user.core.ts": {
+      "lineLengths": [
+        13,
+        62,
+        41,
+        29,
+        9,
+        18,
+        26,
+        28,
+        39,
+        20,
+        27,
+        18,
+        17,
+        44,
+        53,
+        6,
+        17,
+        46,
+        41,
+        44,
+        2,
+        1496
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/schemas/user.core.ts",
+        "sources": [
+          "file:///app/src/modules/user/schemas/user.core.ts"
+        ],
+        "names": [],
+        "mappings": ";;;AAAA,6BAAwB;AAExB,IAAY,IAGX;AAHD,WAAY,IAAI;IACd,qBAAa,CAAA;IACb,uBAAe,CAAA;AACjB,CAAC,EAHW,IAAI,oBAAJ,IAAI,QAGf;AAEY,QAAA,QAAQ,GAAG;IACtB,IAAI,EAAE,OAAC,CAAC,MAAM,EAAE;IAChB,KAAK,EAAE,OAAC;SACL,MAAM,CAAC;QACN,cAAc,EAAE,mBAAmB;QACnC,kBAAkB,EAAE,wBAAwB;KAC7C,CAAC;SACD,KAAK,EAAE;IACV,IAAI,EAAE,OAAC,CAAC,UAAU,CAAC,IAAI,CAAC,CAAC,QAAQ,EAAE;IACnC,MAAM,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;IAC9B,SAAS,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;CAClC,CAAC",
+        "sourcesContent": [
+          "import { z } from \"zod\";\r\n\r\nexport enum Role {\r\n  USER = \"USER\",\r\n  ADMIN = \"ADMIN\",\r\n}\r\n\r\nexport const userCore = {\r\n  name: z.string(),\r\n  email: z\r\n    .string({\r\n      required_error: \"Email is required\",\r\n      invalid_type_error: \"Email must be a string\",\r\n    })\r\n    .email(),\r\n  role: z.nativeEnum(Role).optional(),\r\n  active: z.boolean().optional(),\r\n  activated: z.boolean().optional(),\r\n};\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/user.route.ts": {
+      "lineLengths": [
+        13,
+        62,
+        28,
+        53,
+        65,
+        63,
+        35,
+        21,
+        17,
+        23,
+        73,
+        14,
+        10,
+        37,
+        24,
+        17,
+        23,
+        72,
+        14,
+        10,
+        33,
+        22,
+        17,
+        53,
+        23,
+        72,
+        14,
+        10,
+        36,
+        26,
+        17,
+        53,
+        23,
+        72,
+        14,
+        10,
+        36,
+        59,
+        1,
+        32,
+        3084
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/user.route.ts",
+        "sources": [
+          "file:///app/src/modules/user/user.route.ts"
+        ],
+        "names": [],
+        "mappings": ";;;AACA,qDAM0B;AAC1B,iEAAsE;AACtE,+DAA+E;AAExE,KAAK,UAAU,UAAU,CAAC,MAAuB;IACtD,MAAM,CAAC,GAAG,CACR,GAAG,EACH;QACE,MAAM,EAAE;YACN,QAAQ,EAAE;gBACR,GAAG,EAAE,IAAA,uBAAI,EAAC,qBAAqB,CAAC;aACjC;SACF;KACF,EAED,4BAAW,CACZ,CAAC;IAEF,MAAM,CAAC,GAAG,CACR,MAAM,EACN;QACE,MAAM,EAAE;YACN,QAAQ,EAAE;gBACR,GAAG,EAAE,IAAA,uBAAI,EAAC,oBAAoB,CAAC;aAChC;SACF;KACF,EACD,wBAAO,CACR,CAAC;IAEF,MAAM,CAAC,IAAI,CACT,GAAG,EACH;QACE,MAAM,EAAE;YACN,IAAI,EAAE,kCAAgB;YACtB,QAAQ,EAAE;gBACR,GAAG,EAAE,IAAA,uBAAI,EAAC,oBAAoB,CAAC;aAChC;SACF;KACF,EACD,2BAAU,CACX,CAAC;IAEF,MAAM,CAAC,KAAK,CACV,MAAM,EACN;QACE,MAAM,EAAE;YACN,IAAI,EAAE,kCAAgB;YACtB,QAAQ,EAAE;gBACR,GAAG,EAAE,IAAA,uBAAI,EAAC,oBAAoB,CAAC;aAChC;SACF;KACF,EACD,2BAAU,CACX,CAAC;IAEF,MAAM,CAAC,MAAM,CAAC,MAAM,EAAE,EAAE,EAAE,2BAAU,CAAC,CAAC;AACxC,CAAC;AArDD,gCAqDC",
+        "sourcesContent": [
+          "import { FastifyInstance } from \"fastify\";\r\nimport {\r\n  createUser,\r\n  deleteUser,\r\n  getAllUsers,\r\n  getUser,\r\n  updateUser,\r\n} from \"./user.contoller\";\r\nimport { $ref, userResponceSchema } from \"./schemas/user.res.schemas\";\r\nimport { createUserSchema, updateUserSchema } from \"./schemas/user.req.shemas\";\r\n\r\nexport async function userRoutes(server: FastifyInstance) {\r\n  server.get(\r\n    \"/\",\r\n    {\r\n      schema: {\r\n        response: {\r\n          200: $ref(\"usersResponceSchema\"),\r\n        },\r\n      },\r\n    },\r\n\r\n    getAllUsers\r\n  );\r\n\r\n  server.get(\r\n    \"/:id\",\r\n    {\r\n      schema: {\r\n        response: {\r\n          200: $ref(\"userResponceSchema\"),\r\n        },\r\n      },\r\n    },\r\n    getUser\r\n  );\r\n\r\n  server.post(\r\n    \"/\",\r\n    {\r\n      schema: {\r\n        body: createUserSchema,\r\n        response: {\r\n          201: $ref(\"userResponceSchema\"),\r\n        },\r\n      },\r\n    },\r\n    createUser\r\n  );\r\n\r\n  server.patch(\r\n    \"/:id\",\r\n    {\r\n      schema: {\r\n        body: updateUserSchema,\r\n        response: {\r\n          201: $ref(\"userResponceSchema\"),\r\n        },\r\n      },\r\n    },\r\n    updateUser\r\n  );\r\n\r\n  server.delete(\"/:id\", {}, deleteUser);\r\n}\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/user.contoller.ts": {
+      "lineLengths": [
+        13,
+        62,
+        110,
+        49,
+        38,
+        54,
+        37,
+        1,
+        34,
+        34,
+        30,
+        63,
+        36,
+        1,
+        26,
+        37,
+        63,
+        22,
+        36,
+        1,
+        32,
+        37,
+        30,
+        75,
+        36,
+        1,
+        32,
+        37,
+        30,
+        52,
+        36,
+        1,
+        32,
+        3944
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/user.contoller.ts",
+        "sources": [
+          "file:///app/src/modules/user/user.contoller.ts"
+        ],
+        "names": [],
+        "mappings": ";;;AACA,iDAMwB;AAGjB,KAAK,UAAU,WAAW,CAAC,GAAmB,EAAE,GAAiB;IACtE,MAAM,KAAK,GAAG,MAAM,IAAA,sBAAY,GAAE,CAAC;IACnC,OAAO,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;AACnC,CAAC;AAHD,kCAGC;AAEM,KAAK,UAAU,OAAO,CAC3B,GAA+C,EAC/C,GAAiB;IAEjB,MAAM,EAAE,EAAE,EAAE,GAAG,GAAG,CAAC,MAAM,CAAC;IAC1B,MAAM,IAAI,GAAG,MAAM,IAAA,sBAAW,EAAC,MAAM,CAAC,EAAE,CAAC,CAAC,CAAC;IAC3C,OAAO,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AAClC,CAAC;AAPD,0BAOC;AAEM,KAAK,UAAU,UAAU,CAC9B,GAA8C,EAC9C,GAAiB;IAEjB,MAAM,IAAI,GAAG,MAAM,IAAA,wBAAa,EAAC,GAAG,CAAC,IAAI,CAAC,CAAC;IAC3C,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC;IAClB,OAAO,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AAClC,CAAC;AAPD,gCAOC;AAEM,KAAK,UAAU,UAAU,CAC9B,GAAsE,EACtE,GAAiB;IAEjB,MAAM,EAAE,EAAE,EAAE,GAAG,GAAG,CAAC,MAAM,CAAC;IAC1B,MAAM,IAAI,GAAG,MAAM,IAAA,wBAAa,EAAC,MAAM,CAAC,EAAE,CAAC,EAAE,GAAG,CAAC,IAAI,CAAC,CAAC;IACvD,OAAO,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AAClC,CAAC;AAPD,gCAOC;AAEM,KAAK,UAAU,UAAU,CAC9B,GAA+C,EAC/C,GAAiB;IAEjB,MAAM,EAAE,EAAE,EAAE,GAAG,GAAG,CAAC,MAAM,CAAC;IAC1B,MAAM,IAAA,wBAAa,EAAC,MAAM,CAAC,EAAE,CAAC,CAAC,CAAC;IAChC,OAAO,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AAClC,CAAC;AAPD,gCAOC",
+        "sourcesContent": [
+          "import { FastifyReply, FastifyRequest } from \"fastify\";\r\nimport {\r\n  findAll as findAllUsers,\r\n  findOne as findOneUser,\r\n  createOne as createOneUser,\r\n  updateOne as updateOneUser,\r\n  deleteOne as deleteOneUser,\r\n} from \"./user.service\";\r\nimport { CreateUserInput, UpdateUserInput } from \"./schemas/user.req.shemas\";\r\n\r\nexport async function getAllUsers(req: FastifyRequest, res: FastifyReply) {\r\n  const users = await findAllUsers();\r\n  return res.code(200).send(users);\r\n}\r\n\r\nexport async function getUser(\r\n  req: FastifyRequest<{ Params: { id: string } }>,\r\n  res: FastifyReply\r\n) {\r\n  const { id } = req.params;\r\n  const user = await findOneUser(Number(id));\r\n  return res.code(200).send(user);\r\n}\r\n\r\nexport async function createUser(\r\n  req: FastifyRequest<{ Body: CreateUserInput }>,\r\n  res: FastifyReply\r\n) {\r\n  const user = await createOneUser(req.body);\r\n  console.log(user);\r\n  return res.code(201).send(user);\r\n}\r\n\r\nexport async function updateUser(\r\n  req: FastifyRequest<{ Body: UpdateUserInput; Params: { id: string } }>,\r\n  res: FastifyReply\r\n) {\r\n  const { id } = req.params;\r\n  const user = await updateOneUser(Number(id), req.body);\r\n  return res.code(201).send(user);\r\n}\r\n\r\nexport async function deleteUser(\r\n  req: FastifyRequest<{ Params: { id: string } }>,\r\n  res: FastifyReply\r\n) {\r\n  const { id } = req.params;\r\n  await deleteOneUser(Number(id));\r\n  return res.code(200).send(null);\r\n}\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/user.service.ts": {
+      "lineLengths": [
+        13,
+        72,
+        62,
+        2,
+        62,
+        103,
+        64,
+        26,
+        57,
+        17,
+        1,
+        26,
+        28,
+        57,
+        16,
+        15,
+        10,
+        7,
+        16,
+        46,
+        5,
+        16,
+        1,
+        26,
+        33,
+        53,
+        20,
+        7,
+        16,
+        1,
+        30,
+        37,
+        53,
+        16,
+        15,
+        10,
+        20,
+        7,
+        16,
+        46,
+        5,
+        16,
+        1,
+        30,
+        30,
+        53,
+        16,
+        15,
+        10,
+        7,
+        16,
+        46,
+        5,
+        16,
+        1,
+        30,
+        3352
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/user.service.ts",
+        "sources": [
+          "file:///app/src/modules/user/user.service.ts"
+        ],
+        "names": [],
+        "mappings": ";;;;;;AAAA,gEAAwC;AAGjC,KAAK,UAAU,OAAO;IAC3B,MAAM,KAAK,GAAG,MAAM,gBAAM,CAAC,IAAI,CAAC,QAAQ,EAAE,CAAC;IAC3C,OAAO,KAAK,CAAC;AACf,CAAC;AAHD,0BAGC;AAEM,KAAK,UAAU,OAAO,CAAC,EAAU;IACtC,MAAM,IAAI,GAAG,MAAM,gBAAM,CAAC,IAAI,CAAC,UAAU,CAAC;QACxC,KAAK,EAAE;YACL,EAAE;SACH;KACF,CAAC,CAAC;IAEH,IAAI,CAAC,IAAI,EAAE,CAAC;QACV,MAAM,IAAI,KAAK,CAAC,oBAAoB,CAAC,CAAC;IACxC,CAAC;IACD,OAAO,IAAI,CAAC;AACd,CAAC;AAXD,0BAWC;AAEM,KAAK,UAAU,SAAS,CAAC,KAAsB;IACpD,MAAM,IAAI,GAAG,MAAM,gBAAM,CAAC,IAAI,CAAC,MAAM,CAAC;QACpC,IAAI,EAAE,KAAK;KACZ,CAAC,CAAC;IACH,OAAO,IAAI,CAAC;AACd,CAAC;AALD,8BAKC;AAEM,KAAK,UAAU,SAAS,CAAC,EAAU,EAAE,KAAsB;IAChE,MAAM,IAAI,GAAG,MAAM,gBAAM,CAAC,IAAI,CAAC,MAAM,CAAC;QACpC,KAAK,EAAE;YACL,EAAE;SACH;QACD,IAAI,EAAE,KAAK;KACZ,CAAC,CAAC;IAEH,IAAI,CAAC,IAAI,EAAE,CAAC;QACV,MAAM,IAAI,KAAK,CAAC,oBAAoB,CAAC,CAAC;IACxC,CAAC;IAED,OAAO,IAAI,CAAC;AACd,CAAC;AAbD,8BAaC;AAEM,KAAK,UAAU,SAAS,CAAC,EAAU;IACxC,MAAM,IAAI,GAAG,MAAM,gBAAM,CAAC,IAAI,CAAC,MAAM,CAAC;QACpC,KAAK,EAAE;YACL,EAAE;SACH;KACF,CAAC,CAAC;IAEH,IAAI,CAAC,IAAI,EAAE,CAAC;QACV,MAAM,IAAI,KAAK,CAAC,oBAAoB,CAAC,CAAC;IACxC,CAAC;IAED,OAAO,IAAI,CAAC;AACd,CAAC;AAZD,8BAYC",
+        "sourcesContent": [
+          "import prisma from \"../../utils/prisma\";\r\nimport { CreateUserInput, UpdateUserInput } from \"./schemas/user.req.shemas\";\r\n\r\nexport async function findAll() {\r\n  const users = await prisma.user.findMany();\r\n  return users;\r\n}\r\n\r\nexport async function findOne(id: number) {\r\n  const user = await prisma.user.findUnique({\r\n    where: {\r\n      id,\r\n    },\r\n  });\r\n\r\n  if (!user) {\r\n    throw new Error(\"Document not found\");\r\n  }\r\n  return user;\r\n}\r\n\r\nexport async function createOne(input: CreateUserInput) {\r\n  const user = await prisma.user.create({\r\n    data: input,\r\n  });\r\n  return user;\r\n}\r\n\r\nexport async function updateOne(id: number, input: UpdateUserInput) {\r\n  const user = await prisma.user.update({\r\n    where: {\r\n      id,\r\n    },\r\n    data: input,\r\n  });\r\n\r\n  if (!user) {\r\n    throw new Error(\"Document not found\");\r\n  }\r\n\r\n  return user;\r\n}\r\n\r\nexport async function deleteOne(id: number) {\r\n  const user = await prisma.user.delete({\r\n    where: {\r\n      id,\r\n    },\r\n  });\r\n\r\n  if (!user) {\r\n    throw new Error(\"Document not found\");\r\n  }\r\n\r\n  return null;\r\n}\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/utils/prisma.ts": {
+      "lineLengths": [
+        13,
+        62,
+        43,
+        43,
+        25,
+        512
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/utils/prisma.ts",
+        "sources": [
+          "file:///app/src/utils/prisma.ts"
+        ],
+        "names": [],
+        "mappings": ";;AAAA,2CAA8C;AAE9C,MAAM,MAAM,GAAG,IAAI,qBAAY,EAAE,CAAC;AAElC,kBAAe,MAAM,CAAC",
+        "sourcesContent": [
+          "import { PrismaClient } from \"@prisma/client\";\r\n\r\nconst prisma = new PrismaClient();\r\n\r\nexport default prisma;\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///app/src/modules/user/schemas/user.req.shemas.ts": {
+      "lineLengths": [
+        13,
+        62,
+        162,
+        29,
+        43,
+        32,
+        13,
+        30,
+        47,
+        56,
+        7,
+        38,
+        2,
+        63,
+        36,
+        30,
+        3,
+        34,
+        13,
+        27,
+        18,
+        17,
+        44,
+        53,
+        6,
+        17,
+        58,
+        41,
+        44,
+        2,
+        33,
+        43,
+        38,
+        47,
+        58,
+        41,
+        44,
+        3,
+        30,
+        13,
+        27,
+        36,
+        2,
+        33,
+        38,
+        36,
+        31,
+        3,
+        47,
+        36,
+        3,
+        4732
+      ],
+      "data": {
+        "version": 3,
+        "file": "/app/src/modules/user/schemas/user.req.shemas.ts",
+        "sources": [
+          "file:///app/src/modules/user/schemas/user.req.shemas.ts"
+        ],
+        "names": [],
+        "mappings": ";;;AAAA,6BAAwB;AACxB,2CAAmC;AAEtB,QAAA,cAAc,GAAG,OAAC;KAC5B,MAAM,CAAC;IACN,QAAQ,EAAE,OAAC,CAAC,MAAM,CAAC;QACjB,cAAc,EAAE,sBAAsB;QACtC,kBAAkB,EAAE,2BAA2B;KAChD,CAAC;IACF,eAAe,EAAE,OAAC,CAAC,MAAM,EAAE;CAC5B,CAAC;KACD,MAAM,CAAC,CAAC,IAAI,EAAE,EAAE,CAAC,IAAI,CAAC,QAAQ,KAAK,IAAI,CAAC,eAAe,EAAE;IACxD,OAAO,EAAE,sBAAsB;IAC/B,IAAI,EAAE,CAAC,iBAAiB,CAAC;CAC1B,CAAC,CAAC;AAEQ,QAAA,gBAAgB,GAAG,OAAC;KAC9B,MAAM,CAAC;IACN,IAAI,EAAE,OAAC,CAAC,MAAM,EAAE;IAChB,KAAK,EAAE,OAAC;SACL,MAAM,CAAC;QACN,cAAc,EAAE,mBAAmB;QACnC,kBAAkB,EAAE,wBAAwB;KAC7C,CAAC;SACD,KAAK,EAAE;IACV,IAAI,EAAE,OAAC,CAAC,UAAU,CAAC,gBAAI,CAAC,CAAC,QAAQ,EAAE;IACnC,MAAM,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;IAC9B,SAAS,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;CAClC,CAAC;KACD,GAAG,CAAC,sBAAc,CAAC,CAAC;AAEV,QAAA,gBAAgB,GAAG,OAAC,CAAC,MAAM,CAAC;IACvC,IAAI,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;IAC3B,KAAK,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,KAAK,EAAE,CAAC,QAAQ,EAAE;IACpC,IAAI,EAAE,OAAC,CAAC,UAAU,CAAC,gBAAI,CAAC,CAAC,QAAQ,EAAE;IACnC,MAAM,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;IAC9B,SAAS,EAAE,OAAC,CAAC,OAAO,EAAE,CAAC,QAAQ,EAAE;CAClC,CAAC,CAAC;AAEU,QAAA,YAAY,GAAG,OAAC;KAC1B,MAAM,CAAC;IACN,IAAI,EAAE,OAAC,CAAC,MAAM,EAAE;IAChB,KAAK,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,KAAK,EAAE;CAC1B,CAAC;KACD,GAAG,CAAC,sBAAc,CAAC,CAAC;AAEV,QAAA,WAAW,GAAG,OAAC,CAAC,MAAM,CAAC;IAClC,KAAK,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,KAAK,EAAE;IACzB,QAAQ,EAAE,OAAC,CAAC,MAAM,EAAE;CACrB,CAAC,CAAC;AAEU,QAAA,oBAAoB,GAAG,OAAC,CAAC,MAAM,CAAC;IAC3C,KAAK,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,KAAK,EAAE;CAC1B,CAAC,CAAC",
+        "sourcesContent": [
+          "import { z } from \"zod\";\r\nimport { Role } from \"./user.core\";\r\n\r\nexport const passwordSchema = z\r\n  .object({\r\n    password: z.string({\r\n      required_error: \"Password is required\",\r\n      invalid_type_error: \"Password must be a string\",\r\n    }),\r\n    passwordConfirm: z.string(),\r\n  })\r\n  .refine((data) => data.password === data.passwordConfirm, {\r\n    message: \"Passwords must match\",\r\n    path: [\"passwordConfirm\"],\r\n  });\r\n\r\nexport const createUserSchema = z\r\n  .object({\r\n    name: z.string(),\r\n    email: z\r\n      .string({\r\n        required_error: \"Email is required\",\r\n        invalid_type_error: \"Email must be a string\",\r\n      })\r\n      .email(),\r\n    role: z.nativeEnum(Role).optional(),\r\n    active: z.boolean().optional(),\r\n    activated: z.boolean().optional(),\r\n  })\r\n  .and(passwordSchema);\r\n\r\nexport const updateUserSchema = z.object({\r\n  name: z.string().optional(),\r\n  email: z.string().email().optional(),\r\n  role: z.nativeEnum(Role).optional(),\r\n  active: z.boolean().optional(),\r\n  activated: z.boolean().optional(),\r\n});\r\n\r\nexport const signupSchema = z\r\n  .object({\r\n    name: z.string(),\r\n    email: z.string().email(),\r\n  })\r\n  .and(passwordSchema);\r\n\r\nexport const loginSchema = z.object({\r\n  email: z.string().email(),\r\n  password: z.string(),\r\n});\r\n\r\nexport const forgotPasswordSchema = z.object({\r\n  email: z.string().email(),\r\n});\r\n\r\nexport type PasswordInput = z.infer<typeof passwordSchema>;\r\nexport type LoginInput = z.infer<typeof loginSchema>;\r\nexport type SignupInput = z.infer<typeof signupSchema>;\r\nexport type UpdateUserInput = z.infer<typeof updateUserSchema>;\r\nexport type CreateUserInput = z.infer<typeof createUserSchema>;\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    }
+  }
+}
