@@ -12,9 +12,6 @@ export async function findOne(where: any) {
     where,
   });
 
-  // if (!user) {
-  //   throw new Error("Document not found");
-  // }
   return user;
 }
 
@@ -39,10 +36,6 @@ export async function updateOne(id: number, input: UpdateUserInput) {
     data: input,
   });
 
-  // if (!user) {
-  //   throw new Error("Document not found");
-  // }
-
   return user;
 }
 
@@ -52,10 +45,6 @@ export async function deleteOne(id: number) {
       id,
     },
   });
-
-  // if (!user) {
-  //   throw new Error("Document not found");
-  // }
 
   return user;
 }

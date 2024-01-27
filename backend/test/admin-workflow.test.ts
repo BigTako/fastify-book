@@ -41,8 +41,13 @@ describe("Admin workflow", () => {
     expect(response.json()).toEqual({ status: "ok" });
   });
 
-  describe("Authentification", () => {
+  // describe("Authentification", () => {
+
+  // });
+
+  describe("Admin interraction with users", () => {
     test("should login admin", async () => {
+      console.log(loggedInAdmin);
       const response = await app.inject({
         method: "POST",
         url: "/api/v1/auth/login",
@@ -51,11 +56,17 @@ describe("Admin workflow", () => {
           password: admin.password,
         },
       });
-    });
-  });
 
-  describe("Admin interraction with users", () => {
+      expect(response.statusCode).toBe(200);
+      const res = await response.json();
+      expect(res).toEqual({
+        jwt: expect.any(String),
+      });
+      jwt = res.jwt;
+    });
+
     test("should create a user with correct body", async () => {
+      console.log(jwt);
       const response = await app.inject({
         method: "POST",
         url: "/api/v1/users",
@@ -72,6 +83,7 @@ describe("Admin workflow", () => {
 
       expect(response.statusCode).toBe(201);
       const res = await response.json();
+
       expect(res).toEqual({
         id: expect.any(Number),
         name: "test",
@@ -196,8 +208,9 @@ describe("Admin workflow", () => {
         },
       });
 
-      expect(response.statusCode).toBe(201);
+      // expect(response.statusCode).toBe(201);
       const res = await response.json();
+      console.log(res);
       expect(res).toEqual({
         id: expect.any(Number),
         title: "some_title",

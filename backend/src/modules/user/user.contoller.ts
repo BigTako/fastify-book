@@ -12,13 +12,11 @@ import {
   SignupInput,
   UpdateUserInput,
 } from "./schemas/user.req.shemas";
-import { server } from "../../server";
 import { verifyPassword } from "../../utils/hash";
+import { RequestError } from "../../utils/error.handler";
 
 export async function getAllUsers(req: FastifyRequest, res: FastifyReply) {
-  console.log("user from request", req.user);
   const users = await findAllUsers();
-
   return res.code(200).send(users);
 }
 
@@ -66,7 +64,10 @@ export async function deleteUser(
   return res.code(200).send(null);
 }
 
-export async function signup(req: FastifyRequest<{ Body: SignupInput }>) {
+export async function signup(
+  req: FastifyRequest<{ Body: SignupInput }>,
+  res: FastifyReply
+) {
   const body = req.body;
   const user = await findOneUser({ email: body.email });
 
@@ -76,11 +77,13 @@ export async function signup(req: FastifyRequest<{ Body: SignupInput }>) {
 
   const newUser = await createOneUser(body);
 
-  return {
-    jwt: server.jwt.sign({
-      id: newUser.id,
-    }),
-  };
+  const token = await res.jwtSign({
+    id: newUser.id,
+  });
+
+  return res.code(201).send({
+    jwt: token,
+  });
 }
 
 export async function login(
@@ -92,7 +95,7 @@ export async function login(
   const user = await findOneUser({ email: body.email });
 
   if (!user) {
-    throw new Error("Invalid email or password");
+    throw new RequestError("Invalid email or password", 400);
   }
   // check if password is correct
   const correctPassword = verifyPassword({
@@ -102,12 +105,14 @@ export async function login(
 
   // sign jwt
   if (correctPassword) {
-    return {
-      jwt: server.jwt.sign({
-        id: user.id,
-      }),
-    };
+    const token = await res.jwtSign({
+      id: user.id,
+    });
+
+    return res.code(201).send({
+      jwt: token,
+    });
   }
 
-  throw new Error("Invalid email or password");
+  throw new RequestError("Invalid email or password", 400);
 }

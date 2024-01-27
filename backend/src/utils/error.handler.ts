@@ -13,6 +13,14 @@ function handleDuplicateFieldsDb(err: Prisma.PrismaClientKnownRequestError) {
   };
 }
 
+export class RequestError extends Error {
+  statusCode: number;
+  constructor(message: string, statusCode: number) {
+    super(message);
+    this.statusCode = statusCode;
+  }
+}
+
 export function handleError(error: FastifyError, reply: FastifyReply) {
   error.statusCode = error.statusCode || 500;
 

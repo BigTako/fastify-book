@@ -14,7 +14,7 @@ export async function userRoutes(server: FastifyInstance) {
   server.get(
     "/",
     {
-      // preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
+      preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
       schema: {
         response: {
           200: $ref("usersResponceSchema"),
@@ -28,7 +28,7 @@ export async function userRoutes(server: FastifyInstance) {
   server.get(
     "/:id",
     {
-      // preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
+      preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
       schema: {
         response: {
           200: $ref("userResponceSchema"),
@@ -41,7 +41,7 @@ export async function userRoutes(server: FastifyInstance) {
   server.post(
     "/",
     {
-      // preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
+      preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
       schema: {
         body: createUserSchema,
         response: {
@@ -55,7 +55,7 @@ export async function userRoutes(server: FastifyInstance) {
   server.patch(
     "/:id",
     {
-      // preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
+      preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])],
       schema: {
         body: updateUserSchema,
         response: {
@@ -68,7 +68,7 @@ export async function userRoutes(server: FastifyInstance) {
 
   server.delete(
     "/:id",
-    // { preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])] },
+    { preHandler: [server.authenticate, server.restrictTo([Role.ADMIN])] },
     deleteUser
   );
 }

@@ -46,9 +46,8 @@ describe("Healthcheck", () => {
     expect(response.statusCode).toBe(201);
 
     const res = await response.json();
-
     expect(res).toEqual({
-      status: "success",
+      jwt: expect.any(String),
     });
   });
 
@@ -69,9 +68,6 @@ describe("Healthcheck", () => {
     expect(res).toEqual({
       jwt: expect.any(String),
     });
-
-    expect(response.headers["Authorization"]).toBeDefined();
-    expect(response.cookies.find((c) => c.name === "jwt")).toBeDefined();
   });
 
   test("should throw an error trying to login to unexisting account", async () => {

@@ -21,6 +21,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:root@database-test:5433/fastify-book-test-db?schema=public
       - APP_NAME=fastify-gram-backend-test
+      - PORT=4000
     ports:
       - "4000:4000"
     depends_on:
