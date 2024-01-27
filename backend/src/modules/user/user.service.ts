@@ -1,3 +1,4 @@
+import { hashPassword } from "../../utils/hash";
 import prisma from "../../utils/prisma";
 import { CreateUserInput, UpdateUserInput } from "./schemas/user.req.shemas";
 
@@ -6,23 +7,27 @@ export async function findAll() {
   return users;
 }
 
-export async function findOne(id: number) {
+export async function findOne(where: any) {
   const user = await prisma.user.findUnique({
-    where: {
-      id,
-    },
+    where,
   });
 
-  if (!user) {
-    throw new Error("Document not found");
-  }
+  // if (!user) {
+  //   throw new Error("Document not found");
+  // }
   return user;
 }
 
 export async function createOne(input: CreateUserInput) {
+  const { hash, salt } = hashPassword(input.password);
+
+  input.password = `${salt}.${hash}`;
+  input.passwordConfirm = "";
+
   const user = await prisma.user.create({
     data: input,
   });
+
   return user;
 }
 
@@ -34,9 +39,9 @@ export async function updateOne(id: number, input: UpdateUserInput) {
     data: input,
   });
 
-  if (!user) {
-    throw new Error("Document not found");
-  }
+  // if (!user) {
+  //   throw new Error("Document not found");
+  // }
 
   return user;
 }
@@ -48,9 +53,9 @@ export async function deleteOne(id: number) {
     },
   });
 
-  if (!user) {
-    throw new Error("Document not found");
-  }
+  // if (!user) {
+  //   throw new Error("Document not found");
+  // }
 
-  return null;
+  return user;
 }

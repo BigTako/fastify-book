@@ -1,4 +1,5 @@
-export const server = require("./app")();
+const fastify = require("./app");
+export const server = fastify({});
 
 async function main() {
   try {

@@ -6,10 +6,19 @@ import {
   updateOne as updateOneUser,
   deleteOne as deleteOneUser,
 } from "./user.service";
-import { CreateUserInput, UpdateUserInput } from "./schemas/user.req.shemas";
+import {
+  CreateUserInput,
+  LoginInput,
+  SignupInput,
+  UpdateUserInput,
+} from "./schemas/user.req.shemas";
+import { server } from "../../server";
+import { verifyPassword } from "../../utils/hash";
 
 export async function getAllUsers(req: FastifyRequest, res: FastifyReply) {
+  console.log("user from request", req.user);
   const users = await findAllUsers();
+
   return res.code(200).send(users);
 }
 
@@ -18,7 +27,10 @@ export async function getUser(
   res: FastifyReply
 ) {
   const { id } = req.params;
-  const user = await findOneUser(Number(id));
+  const user = await findOneUser({ id: Number(id) });
+  if (!user) {
+    throw new Error("Users not found");
+  }
   return res.code(200).send(user);
 }
 
@@ -27,7 +39,6 @@ export async function createUser(
   res: FastifyReply
 ) {
   const user = await createOneUser(req.body);
-  console.log(user);
   return res.code(201).send(user);
 }
 
@@ -37,6 +48,9 @@ export async function updateUser(
 ) {
   const { id } = req.params;
   const user = await updateOneUser(Number(id), req.body);
+  if (!user) {
+    throw new Error("Users not found");
+  }
   return res.code(201).send(user);
 }
 
@@ -45,6 +59,55 @@ export async function deleteUser(
   res: FastifyReply
 ) {
   const { id } = req.params;
-  await deleteOneUser(Number(id));
+  const user = await deleteOneUser(Number(id));
+  if (!user) {
+    throw new Error("Users not found");
+  }
   return res.code(200).send(null);
+}
+
+export async function signup(req: FastifyRequest<{ Body: SignupInput }>) {
+  const body = req.body;
+  const user = await findOneUser({ email: body.email });
+
+  if (user) {
+    throw new Error("This email is already in use.Choose another one.");
+  }
+
+  const newUser = await createOneUser(body);
+
+  return {
+    jwt: server.jwt.sign({
+      id: newUser.id,
+    }),
+  };
+}
+
+export async function login(
+  req: FastifyRequest<{ Body: LoginInput }>,
+  res: FastifyReply
+) {
+  const body = req.body;
+  // check if account exists
+  const user = await findOneUser({ email: body.email });
+
+  if (!user) {
+    throw new Error("Invalid email or password");
+  }
+  // check if password is correct
+  const correctPassword = verifyPassword({
+    candidatePassword: body.password,
+    dbPassword: user.password,
+  });
+
+  // sign jwt
+  if (correctPassword) {
+    return {
+      jwt: server.jwt.sign({
+        id: user.id,
+      }),
+    };
+  }
+
+  throw new Error("Invalid email or password");
 }

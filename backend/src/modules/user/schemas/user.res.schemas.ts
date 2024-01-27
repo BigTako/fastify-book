@@ -9,10 +9,15 @@ export const userResponceSchema = z.object({
 
 export const usersResponceSchema = z.array(userResponceSchema);
 
+export const authResponseSchema = z.object({
+  jwt: z.string(),
+});
+
 export const { schemas: userResponceSchemas, $ref } = buildJsonSchemas(
   {
     userResponceSchema,
     usersResponceSchema,
+    authResponseSchema,
   },
   { $id: "UserResponceSchema" }
 );

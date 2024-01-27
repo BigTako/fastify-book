@@ -55,8 +55,4 @@ ajv.addKeyword("validator", {
   },
 });
 
-// userSchemas.forEach((schema) => {
-//   ajv.addSchema(schema, schema.$id);
-// });
-
 module.exports = ajv.compile.bind(ajv);

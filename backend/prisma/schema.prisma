@@ -10,16 +10,6 @@ enum Role {
   ADMIN
 }
 
-enum ENTITY {
-  POST
-  COMMENT
-}
-
-enum LIKE_TYPE {
-  LIKE
-  DISLIKE
-}
-
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -32,16 +22,9 @@ model User {
   role Role @default(USER)
   password String
   passwordConfirm String
-  active Boolean @default(false)
-  activated Boolean @default(false)
-  accountActivationToken String?
-  accountActivationTokenExpiresAt DateTime?
-  passwordResetToken String?
-  passwordResetTokenExpires DateTime?
+  active Boolean @default(true)
   createdAt DateTime @default(now())
   posts Post[]
-  comments Comment[]
-  likes Like[]
 }
 
 model Post {
@@ -50,28 +33,6 @@ model Post {
   content String
   author User @relation(fields: [authorId], references: [id])
   authorId Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-model Comment {
-  id Int @id @default(autoincrement())
-  content String
-  author User @relation(fields: [authorId], references: [id])
-  authorId Int
-  entity ENTITY
-  entityId Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-model Like {
-  id Int @id @default(autoincrement())
-  author User @relation(fields: [authorId], references: [id])
-  authorId Int
-  entity ENTITY
-  entityId Int
-  type LIKE_TYPE
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
